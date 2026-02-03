@@ -187,7 +187,7 @@ async def twilio_voice_webhook(task_id: str, db: AsyncSession = Depends(get_db))
             return Response(content=str(response), media_type="application/xml")
         
         # Get booking details
-        booking_details = await _get_booking_details(session.booking_id)
+        # booking_details = await _get_booking_details(session.booking_id)
 
         response = VoiceResponse()
         base_url = require_env("BASE_URL").replace('https://', '').replace('http://', '')
