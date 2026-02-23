@@ -130,26 +130,17 @@ async def _get_booking_details(booking_id: str) -> Optional[dict]:
     Mock function to fetch booking details.
     In production, this would query your booking database.
     """
-    # Mock data - replace with actual DB query
+    # TODO: Replace with your own phone number for testing.
+    # In production, replace this entire function with a real database query.
     mock_bookings = {
         "BK-2024-001": {
             "booking_id": "BK-2024-001",
             "user_id": "USER-123",
-            "phone_number": "+91-7905324606",
+            "phone_number": "+11234567890",
             "guest_name": "Rohil Pal",
             "check_in": "2024-01-15",
             "check_out": "2024-01-20",
             "room_number": "204",
-            "hostel_name": "City Center Hostel"
-        },
-        "BK-2024-002": {
-            "booking_id": "BK-2024-002",
-            "user_id": "USER-456",
-            "phone_number": "+9876543210",
-            "guest_name": "Jane Smith",
-            "check_in": "2024-01-18",
-            "check_out": "2024-01-22",
-            "room_number": "305",
             "hostel_name": "City Center Hostel"
         }
     }

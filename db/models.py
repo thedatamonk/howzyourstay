@@ -24,7 +24,7 @@ class FeedbackSession(Base):
     status = Column(SQLEnum(SessionStatus), default=SessionStatus.PENDING, nullable=False)
     
     # Store full conversation transcript as JSON array
-    # Format: [{"role": "assistant", "content": "..."}, {"role": "user", "content": "..."}]
+    # Format: [{"role": "agent", "content": "..."}, {"role": "user", "content": "..."}]
     transcript = Column(JSON, nullable=True)
     
     # Store structured summary as JSON
